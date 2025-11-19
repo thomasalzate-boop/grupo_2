@@ -1,1 +1,35 @@
-hola mundo
+#include <iostream>//dar un servicio de bus teniendo encuenta que la capacidad del bus es de 20 personas y los 4 primeros puestos de las filas a y b son para menores de edad
+using namespace std;
+
+//horarios son 10 am, 2 pm y 6 pm de pereira a medellin
+
+int A[4][5], B[2][5], C[2][5], D[2][5], E[2][5], F[2][5], nmenu, i, j;
+
+int main(){
+	
+	setlocale(LC_ALL, "");
+	
+	cout<<"============================"<<endl;
+	cout<<"==BIENVEDIDO A BUSTRANSPOR=="<<endl;
+	cout<<"============================"<<endl;
+	cout<<"1. horario de las 10 am "<<endl;
+	cout<<"2. horario de las 2 pm "<<endl;
+	cout<<"3. horario de las 6 pm "<<endl;
+	cout<<"4. salir"<<endl;
+	cin>>nmenu;
+	
+	switch(nmenu){
+			case 1:
+				cout<<"querido usuario esta es la disponibilidad de asientos en el horario de las 10 am "<<endl;
+				for(i=1; i<=5; i++ ){
+					for(j=1; j<=4; j++ ){
+					   cout<<"[ "<<A[i][j]<<" ]"<<" ";
+				}
+				cout<<endl;
+				}
+			
+	}
+	
+	
+	
+}
